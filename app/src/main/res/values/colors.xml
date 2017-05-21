@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#00ab69</color>
+    <color name="white">#ffffff</color>
+    <color name="bg">#b3000000</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+
+    <color name="darkblue">#072e4f</color>
+
+    <color name="green">#00ab69</color>
+
+    <color name="alpha">#00000000</color>
+
+    <color name="select_color">#50000000</color>
+
+    <color name="light_grey">#e0e4e0</color>
+    <color name="offwhite">#FFEEE5</color>
+    <color name="red">#bc1212</color>
+    <color name="yellow">#d2d60a</color>
+
+    <color name="toolbartitle">#fff</color>
+
+
+</resources>

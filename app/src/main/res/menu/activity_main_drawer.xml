@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account"
+            android:title="My Account" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_cart"
+            android:title="Orders" />
+        <item
+            android:id="@+id/radio"
+            android:icon="@drawable/ic_radiobutton_unchecked_md"
+            android:title="Radio" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="Help Us Improve" />
+
+        <item
+            android:id="@+id/nav_policy"
+            android:icon="@drawable/ic_privacy"
+            android:title="Privacy Policy" />
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out" />
+    </group>
+
+
+
+</menu>

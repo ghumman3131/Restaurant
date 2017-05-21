@@ -1,0 +1,91 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="2dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+
+        android:id="@+id/cat_lay"
+        android:clickable="true"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rest_image"
+            android:scaleType="fitXY"
+            android:padding="@dimen/pad_5dp"
+            android:src="@drawable/resticon"
+            />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/cat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="@dimen/pad_10dp"
+            android:textStyle="bold"
+            android:text="item"
+            android:textColor="@android:color/black"
+
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/ratingtext"
+        android:background="@drawable/green_round_rect"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/pad_5dp"
+        android:layout_margin="@dimen/pad_5dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_below="@+id/cat_title"
+        android:layout_marginLeft="@dimen/pad_10dp"
+        android:text="type"
+        android:layout_marginRight="@dimen/pad_15dp"
+        android:id="@+id/resttype"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Directions"
+        android:id="@+id/directionstext"
+        android:layout_below="@+id/resttype"
+        android:layout_marginLeft="@dimen/pad_10dp"
+        android:layout_marginTop="@dimen/pad_10dp"
+        android:layout_marginRight="@dimen/pad_20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="closed"
+        android:id="@+id/reststatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/pad_10dp"/>
+
+</RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

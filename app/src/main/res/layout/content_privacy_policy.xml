@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_privacy_policy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/pad_10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.inceptionlabs.restaraunt.Activities.Privacy_policy"
+    tools:showIn="@layout/activity_privacy_policy">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.inceptionlabs.restaraunt.Custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="A Privacy Policy is a legal statement that specifies what the business owner does with the personal data collected from users, along with how the data is processed and why.
+
+In 1968, Council of Europe did studies on the threat of the Internet expansion as they were concerned with the effects of technology on human rights. This lead to the development of policies that were to be developed to protect personal data.
+
+This marks the start of what we know now as a “Privacy Policy”. While the name “Privacy Policy” refers to the legal agreement, the concept of privacy and protecting user data is closely related.
+
+This agreement can also be known under these names:
+
+Privacy Statement
+Privacy Notice
+Privacy Information
+Privacy Page
+The Privacy Policy can be used for both your website and mobile app if it’s adapted to include the platforms your business operates on.
+
+The contents of a Privacy Policy may differ from one country to another, depending on the country legislation, but most privacy laws identify the following critical points that a business must comply with when dealing with personal data:
+
+Notice. Data collectors (meaning, you or your company) must make clear what they are doing with the personal information from users before gathering it.
+Choice. The companies collecting the data must respect the choices of users on what information to provide and how personal that provided information will be.
+Access. Users should be able to view or contest the accuracy of personal data collected by the company.
+Security. The companies are entirely responsible for the accuracy and security (keeping it properly away from unauthorized eyes and hands) of the collected personal information.
+This means that a “Privacy Policy” serves as a way to inform users how their personal information will be used, along with how the information will be collected and who has access to it.
+
+Who needs a Privacy Policy
+
+Any entity (company or individual) that collects or uses personal information from users will need a Privacy Policy.
+
+A Privacy Policy is required regardless of the type of platform your business operates on or what kind of industry you are in:
+
+Web sites
+WordPress blogs, or any other platforms: Joomla!, Drupal etc.
+E-commerce stores
+Mobile apps. Not having a Privacy Policy can be a reason for rejection during the app review.
+A Privacy Policy is required for all iOS apps. Section 17 of “Apple’s App Store Review Guidelines” and the “iOS Developer Program License” require developers with apps that collect personal information from users to have this legal agreement.
+
+"/>
+    </ScrollView>
+</RelativeLayout>

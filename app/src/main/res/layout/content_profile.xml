@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.inceptionlabs.restaraunt.Activities.Profile"
+    tools:showIn="@layout/activity_profile">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/signback"
+        android:scaleType="centerCrop"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@drawable/two_round_rect"
+         android:layout_marginLeft="@dimen/pad_20dp"
+         android:layout_marginRight="@dimen/pad_20dp"
+         android:layout_marginTop="@dimen/pad_150dp"
+         android:orientation="vertical"
+         android:padding="@dimen/pad_10dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="NAME"
+             android:textColor="@android:color/black"/>
+
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="name"
+             android:id="@+id/user_name"
+             android:background="@null"
+             android:layout_marginTop="@dimen/pad_5dp"/>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#80c7c6c6"
+             android:layout_marginTop="@dimen/pad_5dp"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="EMAIL"
+             android:layout_marginTop="@dimen/pad_15dp"
+             android:textColor="@android:color/black"/>
+
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="email"
+             android:id="@+id/user_email"
+             android:background="@null"
+             android:layout_marginTop="@dimen/pad_5dp"/>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#80c7c6c6"
+             android:layout_marginTop="@dimen/pad_5dp"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="MOBILE NO."
+             android:layout_marginTop="@dimen/pad_15dp"
+             android:textColor="@android:color/black"/>
+
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="mobile no."
+             android:id="@+id/user_mobile"
+             android:background="@null"
+             android:inputType="phone"
+             android:layout_marginTop="@dimen/pad_5dp"/>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#80c7c6c6"
+             android:layout_marginTop="@dimen/pad_5dp"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="PASSWORD"
+             android:layout_marginTop="@dimen/pad_15dp"
+             android:textColor="@android:color/black"/>
+
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="password"
+             android:id="@+id/user_password"
+             android:background="@null"
+             android:layout_marginTop="@dimen/pad_5dp"/>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#80c7c6c6"
+             android:layout_marginTop="@dimen/pad_5dp"/>
+     </LinearLayout>
+
+</RelativeLayout>

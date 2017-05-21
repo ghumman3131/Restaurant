@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="com.inceptionlabs.restaraunt.Activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+            <com.inceptionlabs.restaraunt.Custom.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT LOCATION"
+                android:textSize="@dimen/txt_16sp"
+                android:id="@+id/selectcity"
+
+                android:layout_marginLeft="@dimen/pad_50dp"
+                android:textColor="@color/toolbartitle"/>
+
+            <com.inceptionlabs.restaraunt.Custom.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectedcity"
+                android:layout_below="@+id/selectcity"
+                android:layout_marginLeft="@dimen/pad_50dp"
+                android:visibility="gone"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+
+        android:layout_margin="@dimen/pad_30dp"
+
+        android:id="@+id/fab"
+        android:visibility="gone"
+        >
+
+        <com.inceptionlabs.restaraunt.Custom.CircularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="0"
+
+            android:padding="@dimen/pad_2dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/cart_counter"
+            android:elevation="@dimen/pad_7dp"
+            android:layout_gravity="right"/>
+
+        <android.support.design.widget.FloatingActionButton
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/pad_10dp"
+            android:layout_gravity="bottom|end"
+
+            android:src="@drawable/mealbowl" />
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.Payment"
+    android:background="#c7c6c6">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAY"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/pad_50dp"
+                android:textColor="@color/toolbartitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="PLACE ORDER"
+                android:layout_marginRight="@dimen/pad_10dp"
+                android:textColor="@color/toolbartitle"
+                android:clickable="true"
+                android:onClick="selectaddress"
+                android:id="@+id/postorderbtn"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/pad_70dp"
+        android:gravity="center_horizontal">
+
+<com.inceptionlabs.restaraunt.Custom.MyTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MAKE PAYMENY OF"
+    android:textColor="@android:color/black"/>
+
+        <com.inceptionlabs.restaraunt.Custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_5dp"/>
+
+        <com.inceptionlabs.restaraunt.Custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs"
+            android:textColor="@android:color/black"/>
+
+        <com.inceptionlabs.restaraunt.Custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_3dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:id="@+id/pay"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/pad_120dp">
+
+        <ImageView
+            android:id="@+id/zigzag_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/zigzag" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+
+            <com.inceptionlabs.restaraunt.Custom.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARD DETAILS"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/pad_10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_60dp"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/allcard"
+                    android:layout_marginRight="@dimen/pad_20dp"/>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rect"
+                android:padding="@dimen/pad_5dp"
+                android:hint="card holder's name"
+                android:inputType="textPersonName"
+                android:id="@+id/cardname"
+                android:layout_margin="@dimen/pad_10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rect"
+                android:padding="@dimen/pad_5dp"
+                android:hint="card number"
+                android:inputType="number"
+                android:id="@+id/cardnumber"
+                android:layout_margin="@dimen/pad_10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/pad_15dp"
+                android:padding="@dimen/pad_10dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_rect"
+                    android:padding="@dimen/pad_5dp"
+                    android:hint="Expiration date"
+                    android:inputType="date"
+                    android:id="@+id/carddate"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_rect"
+                    android:padding="@dimen/pad_5dp"
+                    android:hint="CVV"
+                    android:id="@+id/cardcsc"
+                    android:layout_marginLeft="@dimen/pad_10dp"
+                    android:inputType="number"
+                    android:layout_weight="2"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

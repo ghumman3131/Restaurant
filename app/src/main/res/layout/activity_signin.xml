@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/signback"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+
+        android:id="@+id/signin_lay">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:id="@+id/signin_email"
+            android:background="#80ffffff"
+            android:layout_marginLeft="@dimen/pad_20dp"
+            android:layout_marginRight="@dimen/pad_20dp"
+            android:padding="@dimen/pad_10dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:id="@+id/signin_password"
+            android:inputType="textPassword"
+            android:background="#80ffffff"
+            android:layout_marginLeft="@dimen/pad_20dp"
+            android:layout_marginRight="@dimen/pad_20dp"
+            android:padding="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:id="@+id/sign_in_btn"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginTop="@dimen/pad_20dp"
+            />
+
+        <com.inceptionlabs.restaraunt.Custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE NEW ACCOUNT"
+            android:id="@+id/create_new_acc"
+            android:textColor="@color/colorPrimary"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/pad_10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/register_lay"
+        android:visibility="gone"
+       >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:id="@+id/register_email"
+            android:background="#80ffffff"
+            android:layout_marginLeft="@dimen/pad_20dp"
+            android:layout_marginRight="@dimen/pad_20dp"
+            android:padding="@dimen/pad_10dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:id="@+id/register_name"
+            android:background="#80ffffff"
+            android:layout_marginLeft="@dimen/pad_20dp"
+            android:layout_marginRight="@dimen/pad_20dp"
+            android:padding="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="contact number"
+            android:id="@+id/register_mobile"
+            android:background="#80ffffff"
+            android:layout_marginLeft="@dimen/pad_20dp"
+            android:layout_marginRight="@dimen/pad_20dp"
+            android:padding="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:inputType="phone"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:id="@+id/register_password"
+            android:inputType="textPassword"
+            android:background="#80ffffff"
+            android:layout_marginLeft="@dimen/pad_20dp"
+            android:layout_marginRight="@dimen/pad_20dp"
+            android:padding="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="type password again"
+            android:inputType="textPassword"
+            android:id="@+id/register_repeat_password"
+            android:background="#80ffffff"
+            android:layout_marginLeft="@dimen/pad_20dp"
+            android:layout_marginRight="@dimen/pad_20dp"
+            android:padding="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:id="@+id/register_btn"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginTop="@dimen/pad_20dp"
+            />
+
+        <com.inceptionlabs.restaraunt.Custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALREADY REGISTERED ? SIGN IN"
+            android:textColor="@color/colorPrimary"
+            android:clickable="true"
+            android:id="@+id/already_acc"
+            android:layout_marginTop="@dimen/pad_10dp"/>
+    </LinearLayout>
+</RelativeLayout>
